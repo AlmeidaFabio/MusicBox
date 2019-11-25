@@ -1,0 +1,34 @@
+{
+  "name": "musicbox",
+  "version": "1.0.0",
+  "description": "Projeto para praticar os conceitos aprendidos nas aulas de Gulp, Sass, Webpack e Git.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlmeidaFabio/MusicBox.git"
+  },
+  "author": "AlmeidaFabioO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlmeidaFabio/MusicBox/issues"
+  },
+  "homepage": "https://github.com/AlmeidaFabio/MusicBox#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-image": "^5.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  }
+}
