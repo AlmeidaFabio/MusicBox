@@ -34,7 +34,7 @@ function css(){
 function imagens(){
     return src('src/images/*.{jpg,png}')
     .pipe(image())
-    .pipe(dest('public/images/'));
+    .pipe(dest('public/assets/images/'));
 }
 
 exports.default = parallel(base, javascript, css, imagens);
