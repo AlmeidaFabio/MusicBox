@@ -12,6 +12,11 @@ function base(){
     .pipe(dest('public/'));
 }
 
+function Artist(){
+    return src('src/templates/artists/*.html')
+    .pipe(dest('public/assets/templates/'));
+}
+
 function javascript(){
     return src('src/js/*.js')
     .pipe(babel({
@@ -37,4 +42,4 @@ function imagens(){
     .pipe(dest('public/assets/images/'));
 }
 
-exports.default = parallel(base, javascript, css, imagens);
+exports.default = parallel(base, javascript, css, imagens, Artist);
