@@ -1,6 +1,6 @@
 var slideItem = 0;
 window.onload = function() {
-	setInterval(passarSlide, 9000);
+	setInterval(passarSlide, 7000);
 
 	var slidewidth = document.getElementById("slideshow").offsetWidth;
 	var objs = document.getElementsByClassName("slides");
@@ -12,7 +12,7 @@ window.onload = function() {
 function passarSlide() {
 	var slidewidth = document.getElementById("slideshow").offsetWidth;
 	
-	if(slideItem >= 28) {
+	if(slideItem >= 7) {
 		slideItem = 0;
 	} else {
 		slideItem++;

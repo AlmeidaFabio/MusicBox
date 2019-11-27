@@ -41,5 +41,10 @@ function imagens(){
     .pipe(image())
     .pipe(dest('public/assets/images/'));
 }
+function musicas(){
+    return src('src/musics/*.{mp3,ogg,wma}')
+    .pipe(image())
+    .pipe(dest('public/assets/musics/'));
+}
 
-exports.default = parallel(base, javascript, css, imagens, Artist);
+exports.default = parallel(base, javascript, css, imagens, Artist, musicas);
