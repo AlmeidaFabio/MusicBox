@@ -36,15 +36,40 @@ function css(){
     .pipe(dest('public/assets/css/'));
 }
 
-function imagens(){
-    return src('src/images/*.{jpg,png}')
+function imagensBg(){
+    return src('src/images/bgs/*.{jpg,png}')
     .pipe(image())
-    .pipe(dest('public/assets/images/'));
-}
-function musicas(){
-    return src('src/musics/*.{mp3,ogg,wma}')
-    .pipe(image())
-    .pipe(dest('public/assets/musics/'));
+    .pipe(dest('public/assets/images/bgs'));
 }
 
-exports.default = parallel(base, javascript, css, imagens, Artist, musicas);
+function imagensMetallica(){
+    return src('src/images/artist/metallica/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/metallica'));
+}
+
+function imagensGuns(){
+    return src('src/images/artist/guns/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/guns'));
+}
+
+function imagensPinkFloyd(){
+    return src('src/images/artist/pinkfloyd/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/pinkfloyd'));
+}
+
+function imagensLed(){
+    return src('src/images/artist/led/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/led'));
+}
+
+function imagensJohan(){
+    return src('src/images/artist/johanglossner/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/johanglossner'));
+}
+
+exports.default = parallel(base, javascript, css, imagensBg, Artist, imagensMetallica, imagensGuns, imagensPinkFloyd, imagensLed, imagensJohan);
