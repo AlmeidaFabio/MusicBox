@@ -72,4 +72,34 @@ function imagensJohan(){
     .pipe(dest('public/assets/images/artist/johanglossner'));
 }
 
-exports.default = parallel(base, javascript, css, imagensBg, Artist, imagensMetallica, imagensGuns, imagensPinkFloyd, imagensLed, imagensJohan);
+function imagensSyn(){
+    return src('src/images/artist/syncole/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/syncole'));
+}
+
+function imagenseletroL(){
+    return src('src/images/artist/eletroL/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/eletroL'));
+}
+
+function imagensKozah(){
+    return src('src/images/artist/kozah/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/kozah'));
+}
+
+function imagensProjota(){
+    return src('src/images/artist/projota/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/projota'));
+}
+
+function imagensHaikaiss(){
+    return src('src/images/artist/haikaiss/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/haikaiss'));
+}
+
+exports.default = parallel(base, javascript, css, imagensBg, Artist, imagensMetallica, imagensGuns, imagensPinkFloyd, imagensLed, imagensJohan, imagensSyn, imagenseletroL, imagensKozah, imagensProjota, imagensHaikaiss);
