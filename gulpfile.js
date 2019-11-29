@@ -102,4 +102,16 @@ function imagensHaikaiss(){
     .pipe(dest('public/assets/images/artist/haikaiss'));
 }
 
-exports.default = parallel(base, javascript, css, imagensBg, Artist, imagensMetallica, imagensGuns, imagensPinkFloyd, imagensLed, imagensJohan, imagensSyn, imagenseletroL, imagensKozah, imagensProjota, imagensHaikaiss);
+function imagensRacionais(){
+    return src('src/images/artist/racionais/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/racionais'));
+}
+
+function imagensCriolo(){
+    return src('src/images/artist/criolo/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images/artist/criolo'));
+}
+
+exports.default = parallel(base, javascript, css, imagensBg, Artist, imagensMetallica, imagensGuns, imagensPinkFloyd, imagensLed, imagensJohan, imagensSyn, imagenseletroL, imagensKozah, imagensProjota, imagensHaikaiss, imagensRacionais, imagensCriolo);
