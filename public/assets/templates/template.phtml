@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{titulo}</title>
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>MusicBox</li>
+            <li><a class="home" href="../../home.html">Home</a></li>
+        </ul>
+
+        <div class="slide">
+            <div class="slideshow" id="slideshow">
+                <div class="slideshow_area">
+                    <div class="slides">
+                            <p class="textos">{titulo}</p>
+                    </div>
+    
+                     <div class="slides">
+                            <p class="textos">{musica}</p>
+                    </div>   
+                        
+                    <div class="slides">
+                            <p class="textos">{estilo}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="slide_img">
+            <div class="slideshow_img" id="slideshow_img">
+                <div class="slideshow_img_area">
+                    <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg1.jpg');">
+                        <p class="textos_img">Slide 01</p>
+                    </div>
+
+                    <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg2.jpg');">
+                        <p class="textos_img">Slide 02</p>
+                    </div>
+                    <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg3.jpg');">
+                        <p class="textos_img">Slide 03</p>
+                    </div>
+                    <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg4.jpg');">
+                        <p class="textos_img">Slide 04</p>
+                    </div>
+                    <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg5.jpg');">
+                        <p class="textos_img">Slide 05</p>
+                    </div>
+                    <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg6.jpg');">
+                        <p class="textos_img">Slide 06</p>
+                    </div>
+                    <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg7.jpg');">
+                        <p class="textos_img">Slide 07</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio">
+                    <audio controls="" autoplay preload="auto" loop src="../../assets/musics/{music}"></audio>
+                </div>
+        </div>
+
+        
+
+        <div class="footer">
+            <p>Para maiores informações visite: <a href="" target="blank">{artist} - Wikipédia</a></p>
+            <div class="by">
+                <p>By: AlmeidaFabiO</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home.min.js"></script>
+</body>
+</html>

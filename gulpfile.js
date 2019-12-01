@@ -8,12 +8,12 @@ const babel = require('gulp-babel');
 const cssImport = require('gulp-cssimport');
 
 function base(){
-    return src('src/templates/*.html')
+    return src('src/templates/*.{html,php}')
     .pipe(dest('public/'));
 }
 
 function Artist(){
-    return src('src/templates/artists/*.html')
+    return src('src/templates/artists/*.{phtml,php}')
     .pipe(dest('public/assets/templates/'));
 }
 

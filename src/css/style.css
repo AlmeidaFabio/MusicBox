@@ -1,59 +1,84 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-color:rgb(41, 1, 1);
-}
+@import 'base.css';
+
 .container {
+	width: 100%;
+    height: 100vh;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.8);
 }
-.titulo{
-	width: 793px;
-	margin: auto;
+ul{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
+	list-style: none;
 	color: white;
-	margin-bottom: 30px;
+	border-bottom: 1px solid white;
 }
 
-.music{
-	color: white;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 30px;
-}
 .home {
 	text-decoration: none;
 	color: white;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 30px;
 }
 .home:hover{
 	color: red;
 }
+.slide {
+	width: 793px;
+	height: 30px;
+	margin: auto;
+}
+
 .slideshow {
-	height: 522px;
+	height: 30px;
 	overflow: hidden;
 	transition: all 1s;
-	margin-bottom: 20px;
 }
 .slideshow_area {
 	width: 100000px;
-	height: 522px;
+	height: 30px;
 }
 .slides {
+	width: 793px;
+	height: 30px;
+	float: left;
+}
+.textos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-size: 25px;
+}
+
+
+/* slideshow 2 */
+
+.slideshow_img {
+	height: 522px;
+	overflow: hidden;
+	transition: all 1s;
+}
+.slideshow_img_area {
+	width: 100000px;
+	height: 522px;
+}
+.slides_img {
 	height: 522px;
 	float: left;
 	background-image: url('../images/bg.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
+	background-color: rgba(0, 0, 0, 0.8);
 }
-.textos{
+.textos_img{
 	display: flex;
 	justify-content: center;
 	margin-top: 200px;
@@ -64,30 +89,29 @@ body {
 	font-size: 25px;
 }
 
-.slide {
+.slide_img {
 	width: 793px;
 	height: 522px;
-	margin-top: 30px;
 	margin: auto;
 }
-.slide img {
+
+.slide_img img {
 	width: 100%;
 	height: 100%;
 }
+
 .audio{
 	width: 100%;
 	height: 30px;
 	line-height: 30px;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 30px;
 }
 .audio audio{
-	width: 350px;
+	width: 787px;
 	height: 20px;
 	line-height: 20px;
 	align-items: center;
-	margin-top: 10px;
 }
 
 .footer {
@@ -96,8 +120,9 @@ body {
 	justify-content: space-around;
 	border-top: 1px solid white;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
+	height: 30px;
+	align-items: center;
+	
 }
 .footer a{
 	text-decoration: none;
