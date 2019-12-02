@@ -7,7 +7,15 @@ $array = array(
     "musica" => "Symbolism",
     "estilo" => "Eletrônicas",
     "artist" => "eletro-light",
-    "music" => "symbolism.mp3"
+    "music" => "symbolism.mp3",
+    "texto" => "",   
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
 );
 
 

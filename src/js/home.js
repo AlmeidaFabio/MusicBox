@@ -10,7 +10,7 @@ window.onload = function() {
 		obj[u].style.width = slideW+"px";
 	}
 
-	setInterval(passarSlide, 7000);
+	setInterval(passarSlide, 9000);
 
 	var slidewidth = document.getElementById("slideshow_img").offsetWidth;
 	var objs = document.getElementsByClassName("slides_img");

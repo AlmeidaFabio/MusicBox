@@ -7,7 +7,15 @@ $array = array(
     "musica" => "Heavens",
     "estilo" => "Eletrônicas",
     "artist" => "kozah",
-    "music" => "kozah_heavens.mp3"
+    "music" => "kozah_heavens.mp3",
+    "texto" => "",   
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
 );
 
 

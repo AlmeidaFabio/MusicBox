@@ -7,7 +7,15 @@ $array = array(
     "musica" => "Feel Good",
     "estilo" => "Eletrônicas",
     "artist" => "sin cole",
-    "music" => "Feel_Good.mp3"
+    "music" => "Feel_Good.mp3",
+    "texto" => "",   
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
+    "texto" => "",
 );
 
 
