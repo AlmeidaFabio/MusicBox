@@ -122,6 +122,15 @@ ul {
     line-height: 20px;
     align-items: center
 }
+.video {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+}
 
 .footer {
     color: white;

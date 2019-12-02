@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{titulo}</title>
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>MusicBox</li>
+            <li><a class="home" href="../../index.html">Home</a></li>
+        </ul>
+
+        <div class="slide">
+            <div class="slideshow" id="slideshow">
+                <div class="slideshow_area">
+                    <div class="slides">
+                            <p class="textos">{titulo}</p>
+                    </div>
+    
+                     <div class="slides">
+                            <p class="textos">{musica}</p>
+                    </div>   
+                        
+                    <div class="slides">
+                            <p class="textos">{estilo}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="video">
+            <video src="../../assets/videos/heavens.mp4" autoplay preload="auto" loop></video>
+        </div>
+
+        <div class="audio">
+            <audio controls="" autoplay preload="auto" loop src="../../assets/musics/{music}"></audio>
+        </div>        
+
+        <div class="footer">
+            <p>Para maiores informações visite: <a href="{link}" target="blank">{titulo} - Wikipédia</a></p>
+            <div class="by">
+                <p>By: AlmeidaFabiO</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/home.min.js"></script>
+</body>
+</html>

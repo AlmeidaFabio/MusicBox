@@ -19,5 +19,5 @@ $array = array(
 );
 
 
-$tpl = new Template('template.phtml');
+$tpl = new Template('template2.phtml');
 $tpl->render($array);
