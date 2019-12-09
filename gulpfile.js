@@ -36,6 +36,12 @@ function css(){
     .pipe(dest('public/assets/css/'));
 }
 
+function imagens(){
+    return src('src/images/*.{jpg,png}')
+    .pipe(image())
+    .pipe(dest('public/assets/images'));
+}
+
 function imagensBg(){
     return src('src/images/bgs/*.{jpg,png}')
     .pipe(image())
@@ -114,4 +120,4 @@ function imagensCriolo(){
     .pipe(dest('public/assets/images/artist/criolo'));
 }
 
-exports.default = parallel(base, javascript, css, imagensBg, Artist, imagensMetallica, imagensGuns, imagensPinkFloyd, imagensLed, imagensJohan, imagensSyn, imagenseletroL, imagensKozah, imagensProjota, imagensHaikaiss, imagensRacionais, imagensCriolo);
+exports.default = parallel(base, javascript, css, imagens, imagensBg, Artist, imagensMetallica, imagensGuns, imagensPinkFloyd, imagensLed, imagensJohan, imagensSyn, imagenseletroL, imagensKozah, imagensProjota, imagensHaikaiss, imagensRacionais, imagensCriolo);

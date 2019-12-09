@@ -8,8 +8,6 @@ body {
     background-image: url('../images/bgs/bg.png');
 }
 h1 {
-    width: 100%;
-    margin: auto;
     text-align: center;
     color: #fff;
 }
