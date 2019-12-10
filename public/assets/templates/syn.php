@@ -6,7 +6,7 @@ $array = array(
     "titulo" => "Syn Cole",
     "musica" => "Feel Good",
     "estilo" => "Eletrônicas",
-    "artist" => "sin cole",
+    "artist" => "syncole",
     "music" => "Feel_Good.mp3",
     "texto" => "",   
     "texto" => "",
@@ -19,5 +19,5 @@ $array = array(
 );
 
 
-$tpl = new Template('template.phtml');
+$tpl = new Template('template2.phtml');
 $tpl->render($array);

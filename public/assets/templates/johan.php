@@ -6,7 +6,7 @@ $array = array(
     "titulo" => "Johan Glossner",
     "musica" => "Turn it up Ahlstrom (remix)",
     "estilo" => "Eletrônicas",
-    "artist" => "johan glossner",
+    "artist" => "johanglossner",
     "music" => "turn_it_up_ahlstrom_remix.mp3",
     "texto" => "",   
     "texto" => "",
@@ -19,5 +19,5 @@ $array = array(
 );
 
 
-$tpl = new Template('template.phtml');
+$tpl = new Template('template2.phtml');
 $tpl->render($array);

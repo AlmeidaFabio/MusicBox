@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="container">
-        <ul>
-            <li>MusicBox</li>
-            <li><a class="home" href="../../index.html">Home</a></li>
-        </ul>
+        <div class="topo">
+            <h1>MusicBox</h1>
+            <a class="home" href="../../index.html"><img src="../../assets/images/home.png" alt=""></a>
+        </div>
 
         <div class="slide">
             <div class="slideshow" id="slideshow">
@@ -37,26 +37,26 @@
             <div class="slideshow_img" id="slideshow_img">
                 <div class="slideshow_img_area">
                     <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg1.jpg');">
-                        <p class="textos_img">{texto1}</p>
+                        <div class="textos_img"><p>{texto1}</p></div>
                     </div>
 
                     <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg2.jpg');">
-                        <p class="textos_img">{texto2}</p>
+                        <div class="textos_img"><p>{texto2}</p></div>
                     </div>
                     <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg3.jpg');">
-                        <p class="textos_img">{texto3}</p>
+                        <div class="textos_img"><p>{texto3}</p></div>
                     </div>
                     <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg4.jpg');">
-                        <p class="textos_img">{texto4}</p>
+                        <div class="textos_img"><p>{texto4}</p></div>
                     </div>
                     <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg5.jpg');">
-                        <p class="textos_img">{texto5}</p>
+                        <div class="textos_img"><p>{texto5}</p></div>
                     </div>
                     <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg6.jpg');">
-                        <p class="textos_img">{texto6}</p>
+                        <div class="textos_img"><p>{texto6}</p></div>
                     </div>
                     <div class="slides_img" style="background-image: url('../../assets/images/artist/{artist}/bg7.jpg');">
-                        <p class="textos_img">{texto7}</p>
+                        <div class="textos_img"><p>{texto7}</p></div>
                     </div>
                 </div>
             </div>
@@ -76,6 +76,6 @@
         </div>
     </div>
 
-    <script src="../js/home.min.js"></script>
+    <script src="../js/slides.min.js"></script>
 </body>
 </html>

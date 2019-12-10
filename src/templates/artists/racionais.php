@@ -4,7 +4,7 @@ require 'template.php';
 
 $array = array(
     "titulo" => "Racionais Mc's",
-    "musica" => "Estilo Cachooro",
+    "musica" => "Estilo Cachorro",
     "estilo" => "Rap",
     "artist" => "racionais",
     "music" => "estilo_cachorro.mp3",

@@ -6,7 +6,7 @@ $array = array(
     "titulo" => "Eletro Light",
     "musica" => "Symbolism",
     "estilo" => "Eletrônicas",
-    "artist" => "eletro-light",
+    "artist" => "eletroL",
     "music" => "symbolism.mp3",
     "texto" => "",   
     "texto" => "",
@@ -19,5 +19,5 @@ $array = array(
 );
 
 
-$tpl = new Template('template.phtml');
+$tpl = new Template('template2.phtml');
 $tpl->render($array);
